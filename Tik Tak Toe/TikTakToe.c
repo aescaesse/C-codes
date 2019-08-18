@@ -10,6 +10,10 @@ char players[2] = { 'X','O' };
 int AvaibleSpots[3][3];
 int check = 0;
 
+void cls()
+{
+	system("@cls||clear");
+}
 void CreateBoard()
 {
 	for (int i = 0; i < 3; i++)
@@ -105,7 +109,7 @@ void Engine()
 			check++;
 			Turn();
 			CheckWinner();	
-			system("cls");
+			cls();
 			WriteBoard();
 			printf("\n");
 		}
