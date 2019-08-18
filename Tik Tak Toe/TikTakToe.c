@@ -3,10 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdbool.h>
-<<<<<<< HEAD
-=======
 
->>>>>>> 9dc1a697b0e17ef3a696e7b22a5ecf31073a82b0
 char board[3][3];
 char players[2] = { 'X','O' };
 int AvaibleSpots[3][3];
