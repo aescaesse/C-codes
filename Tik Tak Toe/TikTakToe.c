@@ -3,8 +3,6 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <windows.h>
-
 char board[3][3];
 char players[2] = { 'X','O' };
 int AvaibleSpots[3][3];
@@ -125,6 +123,5 @@ void Engine()
 int main() {
 	 
 	Engine();
-	system("pause");
 	return 0;
 }
