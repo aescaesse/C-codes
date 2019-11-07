@@ -1,3 +1,1 @@
-# Games
-# Beginner
-# C/CPP/C#
+# C codes
