@@ -3,7 +3,8 @@ W wyborach burmistrza Wielkiego Guslaru wystartowało M kandydatów ponumerowany
 ```
 Wejście: 
 3 
-10 1 3 2 1 2 3 3 3 2 2 
+10 
+1 3 2 1 2 3 3 3 2 2 
 ```
 ```
 Wyjście: 
