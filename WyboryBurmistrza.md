@@ -38,13 +38,9 @@ int main()
 		ile[i] = 0;
 	}
 	for (int i = 0; i < N; i++)
-	{
 		scanf("%i", &Glosy[i]);
-	}
 	for (int i = 0; i < N; i++)
-	{
 		++ile[Glosy[i]];
-	}
 	int i = 0;
 	while (i != M)
 	{
@@ -53,10 +49,8 @@ int main()
 	}
 	zwyciezca = Glosy[0];
 	for (int i = 1; i < N; i++)
-	{
 		if (zwyciezca > Glosy[i])
 			zwyciezca = Glosy[i];
-	}
 	printf("%d", zwyciezca);
 	free(Glosy);
 	return 0;
