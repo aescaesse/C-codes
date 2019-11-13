@@ -16,10 +16,8 @@ void cls()
 void CreateBoard()
 {
 	for (int i = 0; i < 3; i++)
-	{
 		for (int j = 0; j < 3; j++)
 			board[i][j] = '-';
-	}
 }
 void WriteBoard()
 {
@@ -47,32 +45,24 @@ bool CheckEquals(char a, char b, char c) {
 int CheckWinner() {
 	int winner=NULL;
 	
-	for (int i = 0; i < 3; i++) {
-		if (CheckEquals(board[i][0], board[i][1], board[i][2])) {
+	for (int i = 0; i < 3; i++)
+		if (CheckEquals(board[i][0], board[i][1], board[i][2])) 
 			winner = board[i][0];
-		}
-	}
 
-	for (int i = 0; i < 3; i++) {
-		if (CheckEquals(board[0][i], board[1][i], board[2][i])) {
+	for (int i = 0; i < 3; i++)
+		if (CheckEquals(board[0][i], board[1][i], board[2][i]))
 			winner = board[0][i];
-		}
-	}
-
-	if (CheckEquals(board[0][0], board[1][1], board[2][2])) {
+		
+	if (CheckEquals(board[0][0], board[1][1], board[2][2])) 
 		winner = board[0][0];
-	}
-	if (CheckEquals(board[2][0], board[1][1], board[0][2])) {
-		winner = board[2][0];
-	}
-	
 
-	if (winner == NULL) {
+	if (CheckEquals(board[2][0], board[1][1], board[0][2]))
+		winner = board[2][0];
+	
+	if (winner == NULL)
 		return NULL;
-	}
-	else {
+	else
 		return winner;
-	}
 }
 
 void Turn()
@@ -97,12 +87,9 @@ void Engine()
 		CreateBoard();
 		WriteBoard();
 		for (int i = 0; i < 3; i++)
-		{
 			for (int j = 0; j < 3; j++)
-			{
 				AvaibleSpots[i][j] = 0;
-			}
-		}		
+	
 		while (!CheckWinner() && check < 9)
 		{
 			check++;

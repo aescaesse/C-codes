@@ -24,12 +24,10 @@ void WriteBoard()
 {	
 	for (int i = 1; i <= height; i++) {
 		for (int j = 1; j <= width; j++) {
-			if (i == 1 || i == width) {
+			if (i == 1 || i == width)
 				printf("#");
-			}
-			else if (j == 1 || j == height) {
+			else if (j == 1 || j == height)
 				printf("#");
-			}
 			else if (i == SnakeY && j == SnakeX)
 				printf("S");
 			else if (i == ItemY && j == ItemX)
@@ -38,13 +36,11 @@ void WriteBoard()
 			{
 				bool print = false;
 				for (int k = 0; k < SnakeTailLong; k++)
-				{
 					if (SnakeTailX[k] == j && SnakeTailY[k] == i)
 					{
 						printf("o");
 						print = true;
 					}
-				}
 				if (!print)
 					printf(" ");
 
