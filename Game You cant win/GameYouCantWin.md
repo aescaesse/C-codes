@@ -1,9 +1,8 @@
-### Who first hit 100 wins
+### Hit 100 first to win
 
 ```c++
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h> 
-#include <conio.h> 
 #include <string.h>
 
 void cls()
